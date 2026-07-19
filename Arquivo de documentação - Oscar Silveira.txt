@@ -1,0 +1,90 @@
+ARQUIVO DE DOCUMENTAÇÃO - Oscar Silveira
+
+1) Identificação do projeto e do autor:
+
+Projeto: SCTEC | Análise Exploratória de dados | Sample Store
+
+Autor: Oscar Silveira Junior
+CPF: 057.539.189-80
+Identificação de usuário SCTEC: oscar_silveira-ju
+Email: ecv.oscar@gmail.com
+
+2) Descrição das etapas de desenvolvimento:
+
+#01 - Download dos materiais do Desafio Extra;
+#02 - Leitura do material para compreensão das exigências e expectativas para o projeto;
+#03 - Revisão das aulas do SCTEC;
+#04 - Leitura dos materiais complementares do curso;
+#05 - Acesso e interfaces iniciais com o Google Colab;
+#06 - Busca por formas de importação "definitiva" do arquivo CSV para Google Colab;
+#07 - Acesso ao GitHub para possibilitar importação e criação de URL para utilizar no Google Colab;
+#08 - Importação do CSV para o Google Colab;
+#09 - Instalação das bibliotecas (pandas, nunpy, matplotlib, seaborn);
+#10 - Análise exploratória inicial da estrutura de dados;
+#11 - Tratamento e preparação de dados;
+#10 - Padronização e conversão de dados;
+#13 - Definição de metodologia, identificação e análise de Outliers;
+#14 - Análise exploratória e operações com os dados;
+#15 - Definição de insights relevantes para as análises;
+#16 - Geração de gráficos com as análises mais relevantes identificadas;
+#17 - Consolidação das análises no "Arquivo de Documentação".
+
+3) Principais decisões tomadas durante o tratamento dos dados:
+
+3.1 - Foi escolhido utilizar o Google Colab por conta da recomendação do material do desafio e identificada maior facilidade para a exportação posterior.
+
+3.2 - Observou-se que quando o CSV era importado diretamente para o Google Colab, no momento da exportação do notebook não seria possível manter o vinculo do código facilmente, dessa forma realizei a vinculação por meio do URL específico do GitHub.
+
+3.3 - Com base nas orientações das aulas do curso foram realizadas as análises exploratórias iniciais dos dados. Buscou-se compreender as variáveis que seriam descritivas e quais poderiam de fato gerar análises relevantes para o projeto/cliente. Exemplo: Categorias, Lucro, Vendas, Produtos, etc.
+
+3.4 - Na análise de outliers, como não havia estabelecido a metodologia para a determinação e eliminação de outliers, adotou-se um enfoque na identificação de potenciais outliers. Para isto adotou-se o metodo de referência com 2 desvios padrão para definição de limites inferiores e superiores. 
+O foco na identificação teve por intuito também possibilitar uma análise da própria equipe da empresa para definir quais se tratam de erros/inconsistências nos dados ou de fato negociações significantes positivamente ou pontos de atenção.
+
+3.5 - Decidiu-se por focar as análises na identificação de oportunidades para a empresa e potenciais riscos na operação. As análises de maneira macro e gerencial visavam identificar:
+- Quais localizaçãoes apresentavam maior volume de vendas;
+- Quais segmentos de cliente apresentavam maior volume;
+- Quais eram os principais clientes da empresa;
+- Quais categorias e subcategorias de produtos apresentavam maior volume de vendas e lucro;
+- Identificação de produtos gerando margens negativas;
+- Impacto dos descontos sobre o lucro da empresa;
+- Análise macro de vendas e lucro da empresa.
+
+4) Principais insights obtidos a partir da análise exploratória e/ou do dashboard;
+
+4.1 - Com base nas análises de outliers:
+#1 247 apresentaram valores acima do limite superior (2dp) e podem representar clientes mais revelantes para a empresa e demandar uma atuação comercial mais focada.
+#2 62 vendas apresentaram lucros abaixo do limite inferior (2dp) e podem representar condições comerciais que devem ser ajustadas ou limitadas;
+#3 856 vendas apresentaram valores de descontos acima do limite superior (2dp) indicando descontos excessivos e sem padronização.
+Observa-se portanto falta de padronização das condições comerciais da empresa. Sugere-se um aprofundamento das ocorrências junto a equipe comercial.
+
+4.2 - A análise exploratória indicou que a empresa possui vendas distribuídas entre todas as regiões do pais, sendo os estados da California, New York e Texas os mais significativos em volumes de vendas. A cidade de New York é campeã de vendas.
+
+4.3 - O principal segmento de clientes em volumes de vendas é o consumidor direto e na sequencia o corporativo, sendo relevante para o direcionamento, por exemplo, de estratégias de marketing. Foi identificada uma lista com os 10 maiores clientes em volumes de vendas, podendo ser utilizado para o foco das equipes comerciais e atendimento prioritário.
+
+4.4 - Observou-se que as vendas da empresa estão distribuídas, de maneira geral entre as 3 categorias de produtos. Porém nos setores de tecnologia e suprimentos para escritório que estão os maiores lucros, enquanto o setor moveleiro apresenta baixo retorno relativo. 
+Os dados indicam ainda que o maior volume de descontos está sendo dado pelo setor de suprimentos para escritório.
+
+4.4 - As subcategorias com maior volume de vendas apresenta como 3 principais os telefones, cadeiras e armazenamento, respectivamente. Entretanto, os maiores lucros estão ocorrendo com a venda das copiadoras, telefones e acessórios, respectivamente. Observou-se com base nos dados ainda que as subcategorias de mesas, capas de livres e surprimentos estão apresentando prejuízo na operação.
+
+4.5 - Os dados mostram ainda que o volume dos descontos, além de expressivo tem correlação com o lucro da empresa. Quando se compra o lucro médio em relação ao percentual de descontos, os descontos superiores a 20% já passam a incorrer em potencias prejuízos nas operações. Sendo necessária uma análise aprofundada e padronização das condições comerciais da empresa dentro de limites operacionais positivos conforme os respectivos produtos.
+
+4.6 - A empresa apresenta ainda um crescimento ao longo dos anos tanto no volume de vendas quanto de lucro acumulado na operação.
+
+5) Guia rápido de como executar ou visualizar o projeto.
+
+#1 - Na pasta ZIP encontram-se: 
+Arquivo Google Colab: Desafio Extra Oscar.ipynb
+Arquvivo PDF: Desafio Extra Oscar.pdf
+Arquivo CSV: Sample - Superstore R01V01
+Arquivo TXT: ARQUIVO DE DOCUMENTAÇÃO - Oscar Silveira
+Arquivo PDF: Dashboard criado no Looker Studio
+
+#2 - Alternativamente os documentos foram inseridos também no repositório do GitHub abaixo:
+https://github.com/ecvoscar/SCTEC_Superstore
+
+#3 - Para verificação dos códigos consultar o arquivo Desafio Extra Oscar.ipynb. Alternativamente foi gerada versão impressa em PDF. 
+
+#4 - A leitura do CSV deve ocorrer diretamente pelo vinculo criado com o GitHub. Alternativamente pode-se importar o arquivo.
+
+#5 - O dashboard interativo no Looker Studio pode ser consultado no link abaixo:
+https://datastudio.google.com/reporting/eda03c57-86fa-4274-8473-f2eb6565d1b4
